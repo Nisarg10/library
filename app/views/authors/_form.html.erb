@@ -16,14 +16,8 @@
     <%= f.text_field :name %>
   </div>
 
-  <div class="field">
-  <%= f.fields_for :books do |b| %>
-    <p> 
-        <%= b.label :title,"Books:" %><br/>
-        <%= b.text_field :title %>
-    </p>
-  <% end %>
-  </div>
+  <p><%= link_to_add_fields "Add Book", f, :books %></p>
+
   <div class="actions">
     <%= f.submit %>
   </div>

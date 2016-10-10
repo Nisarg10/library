@@ -15,7 +15,7 @@ class AuthorsController < ApplicationController
   # GET /authors/new
   def new
     @author = Author.new
-    2.times {@author.books.build}  #TO add multiple books at single time
+    @book = @author.books.build  #TO add multiple books at single time
   end
 
   # GET /authors/1/edit
