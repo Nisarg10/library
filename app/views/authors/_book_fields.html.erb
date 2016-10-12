@@ -1,8 +1,8 @@
  <div class="field">
-  <%= f.fields_for :book do |b| %>
+  <%= f.fields_for(@book) do |b| %>
     <p> 
         <%= b.label :title,"Books:" %><br/>
         <%= b.text_field :title %>
     </p>
   <% end %>
-  </div>
+  </div>	
