@@ -16,7 +16,11 @@
     <%= f.text_field :name %>
   </div>
 
-  <p><%= link_to_add_fields "Add Book", f, :books %></p>
+  <div id="add_books">
+
+  </div>
+  <p><%= link_to "Add Book", new_book_path ,remote: true %></p>
+  
 
   <div class="actions">
     <%= f.submit %>
